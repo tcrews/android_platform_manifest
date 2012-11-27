@@ -2,17 +2,20 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
+           fetch="https://android.googlesource.com" />
+
   <remote  name="tcrews"
-           fetch="git://github.com/tcrews/" />		   
-  <default revision="master"
-           remote="aosp"
+           fetch="https://github.com/tcrews" />
+
+  <default revision="refs/heads/jellybean"
+           remote="github"
+           sync-c="true"
            sync-j="1" />
 
   <project path="build" name="platform/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="platform/bionic" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
@@ -361,4 +364,3 @@
   <project path="vendor/samsung/manta" name="android_vendor_samsung_manta" remote="tcrews" />
 
 </manifest>
-
