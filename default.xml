@@ -7,8 +7,8 @@
   <remote  name="tcrews"
            fetch="git://github.com/tcrews" />
 
-  <default revision="refs/heads/jellybean"
-           remote="github"
+  <default revision="master"
+           remote="aosp"
            sync-c="true"
            sync-j="1" />
 
