@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com" />
 
   <remote  name="tcrews"
-           fetch="https://github.com/tcrews" />
+           fetch="git://github.com/tcrews" />
 
   <default revision="refs/heads/jellybean"
            remote="github"
